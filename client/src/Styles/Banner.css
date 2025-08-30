@@ -1,0 +1,70 @@
+.banner {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;    /* full viewport width */
+  height: 85vh;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  margin: 20px auto;
+  background: white;
+  cursor: pointer;
+}
+
+.banner-slider {
+  display: flex;
+  transition: transform 1s ease;
+  height: 100%;
+  width: 300vw;   /* 3 images * 100vw = 300vw */
+}
+
+.banner-image {
+  width: 100vw;       /* each image full viewport width */
+  height:100%;
+  object-fit: cover;
+  border-radius: 12px;
+  user-select: none;
+  pointer-events: none;
+  background-repeat: no-repeat;
+}
+
+
+.banner-dots {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ddd;
+  box-shadow: 0 0 5px #ccc;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.dot.active {
+  background-color: #dba1a1;
+  box-shadow: 0 0 10px #dba1a1;
+}
+.dot:hover {
+  background-color: #e0b9b9;
+}
+
+@media (max-width:768px){
+  .banner {
+  position: relative;
+  overflow: hidden;
+  width: 95vw;    /* full viewport width */
+  height: 30vh;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+  margin: 10px auto;
+  background: white;
+  cursor: pointer;
+}
+}

@@ -1,0 +1,48 @@
+.category-filter-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 0.7rem 1.3rem;
+  background: #fff8f0; /* Light warm background matching navbar */
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(214, 134, 20, 0.08);
+  scrollbar-width: none;
+}
+
+.category-filter-container::-webkit-scrollbar {
+  display: none;
+}
+
+.category-btn {
+  flex: 0 0 auto;
+  padding: 0.65rem 1.5rem;
+  border-radius: 22px;
+  border: none;
+  background-color: #f7efe2;
+  color: #dba1a1;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+  box-shadow: 0 2px 8px rgba(214, 134, 20, 0.15);
+  margin-bottom: 4px;
+}
+
+.category-btn:hover {
+  background-color: #dba1a1;
+  color: #fff;
+  box-shadow: 0 8px 28px rgba(214, 134, 20, 0.22);
+}
+
+.category-btn.active {
+  background-color: #dba1a1; /* Golden highlight for active */
+  color: #fff;
+  box-shadow: 0 0 0 2.5px #dba1a1, 0 8px 28px rgba(214, 134, 20, 0.3);
+  font-weight: 700;
+}
+
+/* Accessibility: focus */
+.category-btn:focus-visible {
+  outline: 3px solid #dba1a1;
+  outline-offset: 2px;
+}

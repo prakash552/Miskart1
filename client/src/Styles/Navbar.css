@@ -1,0 +1,233 @@
+.navbar {
+  background-color: #fff2f2;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.6rem;
+  box-shadow: 0 2px 8px rgba(219, 161, 161, 0.3); /* softened shadow with #dba1a1 tint */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 150px;
+  width: 150px;
+}
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #dba1a1;
+  user-select: none;
+  justify-content: end;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: #dba1a1;
+  transition: color 0.3s ease;
+}
+
+.hamburger:hover {
+  color: #e0b9b9; /* lighter hover tone */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #7f5a5a; /* soft darkish color matching theme */
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  padding-bottom: 3px;
+}
+
+.nav-link:hover {
+  color: #e0b9b9;
+}
+
+.nav-link.active {
+  color: #dba1a1;
+  border-bottom: 2px solid #dba1a1;
+}
+
+.nav-icon {
+  vertical-align: middle;
+  margin-right: 0.4rem;
+  font-size: 1.2rem;
+  color: inherit;
+}
+
+.cart-count-badge {
+  background: #dba1a1;
+  color: white;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 50%;
+  margin-left: 3px;
+  min-width: 20px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -4px;
+}
+
+.nav-user-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.user-name {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  user-select: none;
+}
+
+/* Dropdown Menu Style */
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  border: 1.5px solid #dba1a1;
+  border-radius: 6px;
+  box-shadow: 0 2px 12px rgba(219, 161, 161, 0.4);
+  list-style: none;
+  padding: 0.2rem 0;
+  width: 140px;
+  z-index: 200;
+}
+
+.dropdown-menu li {
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  color: #7f5a5a;
+}
+
+.dropdown-menu li:hover,
+.dropdown-menu li:focus {
+  background-color: #ffe6e6; /* subtle pink background */
+  outline: none;
+  color: #dba1a1;
+}
+.mobile-controls {
+  display: none;
+ 
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-logo img {
+  height: 100px;
+  width: 100px;
+  
+}
+.navbar-logo{
+  font-size:1.8rem;
+  justify-content: end;
+  width:50%;
+}
+  
+  .nav-links {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    height: 100vh;
+    background-color: rgb(239, 239, 234);
+    flex-direction: column;
+    width: 250px;
+    padding-top: 3rem;
+    gap: 2.5rem;
+    box-shadow: -2px 0 5px rgba(219, 161, 161, 0.7);
+    transform: translateX(100%);
+  }
+
+  .nav-links.nav-active {
+    transform: translateX(0);
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: left;
+    padding-left: 2.5rem;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+    color: #7f5a5a;
+  }
+
+  .nav-link:hover {
+    color: #e0b9b9;
+  }
+
+  .nav-link.active {
+    color: #dba1a1;
+    border-bottom: none;
+    font-weight: 700;
+  }
+ 
+
+
+
+.mobile-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-cart-icon {
+  position: relative;
+  color: #dba1a1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.mobile-cart-icon:hover,
+.mobile-cart-icon:focus {
+  color: #a86565;
+}
+
+.mobile-cart-icon .cart-count-badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background-color: #dba1a1;
+  color: white;
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-weight: 600;
+  user-select: none;
+}
+}

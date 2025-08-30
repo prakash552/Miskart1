@@ -1,0 +1,249 @@
+.product-details-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #7a4a4a;
+}
+
+.product-main {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.product-image-section {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.product-main-image {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 6px 22px rgba(219, 161, 161, 0.3);
+  object-fit: cover;
+}
+
+.product-info-section {
+  flex: 1 1 300px;
+  max-width: 600px;
+}
+
+.product-name {
+  font-size: 2.4rem;
+  color: #dba1a1;
+  margin-bottom: 1.2rem;
+}
+
+.product-meta {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.product-price {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #a86565;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.product-rating svg {
+  color: #dba1a1;
+}
+
+.rating-value {
+  font-weight: 600;
+  color: #dba1a1;
+}
+
+.product-quantity {
+  color: #945454;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.product-description {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  color: #7a4a4a;
+}
+
+/* Feedback Section */
+.feedback-section {
+  margin-bottom: 3rem;
+}
+
+.feedback-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #dba1a1;
+  margin-bottom: 1.2rem;
+}
+
+.feedback-item {
+  background-color: #fff2f2;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(219, 161, 161, 0.2);
+  margin-bottom: 1rem;
+}
+
+.feedback-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.feedback-user {
+  font-weight: 700;
+  color: #a86565;
+}
+
+.feedback-rating svg {
+  color: #dba1a1;
+  margin-right: 2px;
+}
+
+.feedback-comment {
+  font-style: italic;
+  color: #7a4a4a;
+}
+
+/* Related Products Section */
+.related-products-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #dba1a1;
+  margin-bottom: 1.2rem;
+}
+
+.related-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+  gap: 1.5rem;
+}
+
+.related-product-card {
+  background-color: #fff2f2;
+  border-radius: 12px;
+  padding: 0.8rem;
+  box-shadow: 0 4px 16px rgba(219, 161, 161, 0.2);
+  text-align: center;
+  text-decoration: none;
+  color: #a86565;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.related-product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 28px rgba(219, 161, 161, 0.4);
+}
+
+.related-product-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.related-product-card h4 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.product-action-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.wishlist-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  background-color: #f7e8e8;
+  color: #a86565;
+  border: 2px solid #dba1a1;
+  border-radius: 30px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wishlist-btn.wishlisted {
+  background-color: #dba1a1;
+  color: white;
+  border-color: #a86565;
+}
+
+.wishlist-btn:hover {
+  background-color: #dba1a1;
+  color: white;
+  border-color: #a86565;
+}
+
+.add-to-cart-btn {
+  flex: 1;
+  background-color: #dba1a1;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.6rem 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #a86565;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-main {
+    flex-direction: column;
+  }
+
+  .product-image-section,
+  .product-info-section {
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .product-name {
+    font-size: 1.8rem;
+  }
+
+  .product-price {
+    font-size: 1.4rem;
+  }
+
+  .product-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
