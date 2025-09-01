@@ -161,25 +161,18 @@
 }
 
 .filter-close-btn {
-  display: none;
-  background: #fff;
-  color: #e2aeaeff;
-  border: 1px solid #e2aeaeff;
-  border-radius: 6px;
-  padding: 0.3rem 1rem;
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 1rem 0 0 0;
-  cursor: pointer;
+  display :none;
 }
 
 @media (max-width: 768px) {
   .filter-toggle-btn {
     display: block;
-    z-index: 100;
-    position:static;
-   top: 220px;
-   left :290px;
+    z-index: 1000;
+    position:fixed;
+   top: 100px;
+   left :45px;
+   width: 80%;
+   margin-top: 5px;
   }
   .filter-section {
     display: none;
@@ -187,13 +180,13 @@
     top: 0;
     left: 0;
     width: 100vw !important;
-    height: 110vh !important;
+    height: 140vh !important;
     background: #fff8f0;
     z-index: 10000;
-    overflow-y:auto;
+   overflow:auto;
     box-shadow: 0 2px 16px rgba(214, 134, 20, 0.15);
-    border-radius: 0;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 10px;
+    padding: 6rem 1.5rem 2.5rem 1.5rem;
     opacity: 1 !important;
     transform: none !important;
   }
@@ -204,5 +197,17 @@
   }
   .filter-close-btn {
     display: block;
+    position: absolute;
+   top:175px ;
+   right:40px;
+  background: #fff;
+  color: #e2aeaeff;
+  border: 1px solid #e2aeaeff;
+  border-radius: 6px;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem 0 0 0;
+  cursor: pointer;
   }
 }

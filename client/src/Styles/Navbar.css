@@ -158,11 +158,11 @@
     padding-top: 3rem;
     gap: 2.5rem;
     box-shadow: -2px 0 5px rgba(219, 161, 161, 0.7);
-    transform: translateX(100%);
+    transform: translateY(100%);
   }
 
   .nav-links.nav-active {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 
   .nav-links li {

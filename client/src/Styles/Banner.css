@@ -1,7 +1,7 @@
 .banner {
   position: relative;
   overflow: hidden;
-  width: 100vw;    /* full viewport width */
+  width: 98vw;    /* full viewport width */
   height: 85vh;
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
@@ -59,12 +59,12 @@
   .banner {
   position: relative;
   overflow: hidden;
-  width: 95vw;    /* full viewport width */
-  height: 30vh;
+  width: 97vw;    /* full viewport width */
+  height: 35vh;
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.5);
   margin: 10px auto;
-  background: white;
+  background: transparent;
   cursor: pointer;
 }
 }
