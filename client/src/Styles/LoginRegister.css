@@ -4,8 +4,8 @@
   min-height: 90vh;
   max-width: 1200px;
   margin: 2rem auto;
-  background: #fff;
-  box-shadow: 0 8px 24px rgba(219, 161, 161, 0.15);
+  background: #F9E4BC; /* Cream background */
+  box-shadow: 0 8px 24px rgba(85, 0, 0, 0.15);
   border-radius: 16px;
   overflow: hidden;
 }
@@ -29,7 +29,7 @@
 
 .form-title {
   font-size: 2rem;
-  color: #dba1a1;
+  color: #550000; /* Maroon heading */
   margin-bottom: 1.5rem;
   font-weight: 700;
   user-select: none;
@@ -44,45 +44,47 @@
   margin-bottom: 1rem;
   padding: 0.7rem 1rem;
   font-size: 1.05rem;
-  border: 1.5px solid #dba1a1;
+  border: 1.5px solid #550000;
   border-radius: 8px;
   outline: none;
   transition: 0.3s;
+  background: #fff;
 }
 
 .form input:focus {
-  border-color: #e0b9b9;
-  box-shadow: 0 0 6px #e0b9b9aa;
+  border-color: #550000;
+  box-shadow: 0 0 6px rgba(85, 0, 0, 0.3);
 }
 
 .submit-btn {
   padding: 0.75rem 1rem;
-  background-color: #dba1a1;
-  color: white;
+  background-color: #550000; /* Maroon button */
+  color: #F9E4BC; /* Cream text */
   font-weight: 700;
   font-size: 1.1rem;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   margin-top: 0.5rem;
-  transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease, transform 0.2s ease;
 }
 
 .submit-btn:hover {
-  background-color: #e0b9b9;
+  background-color: #7a1a1a; /* Darker maroon */
+  transform: scale(1.05);
 }
 
 .toggle-text {
   margin-top: 1rem;
   font-size: 0.9rem;
-  color: #7a4a4a;
+  color: #550000;
   user-select: none;
 }
 
 .toggle-btn {
   background: none;
   border: none;
-  color: #dba1a1;
+  color: #550000;
   font-weight: 700;
   cursor: pointer;
   text-decoration: underline;
@@ -91,9 +93,9 @@
 }
 
 .error-msg {
-  color: #f44336;
-  background: #ffe6e6;
-  border: 1px solid #f44336;
+  color: #fff;
+  background: #a10000;
+  border: 1px solid #550000;
   padding: 0.6rem 1rem;
   border-radius: 8px;
   margin-bottom: 1rem;

@@ -69,10 +69,10 @@ const Footer = () => {
         </div>
 
         {/* Contact Info */}
-        <div className="footer-section contact">
+        <div className="footer-section-contact">
           <h3>Contact Us</h3>
           <p>Email: support@giftstore.com</p>
-          <p>Phone: +91 12345 67890</p>
+          <p>Phone: +91 8743821921</p>
           <p>Address: 123, Gift Street, Mumbai, India</p>
         </div>
 

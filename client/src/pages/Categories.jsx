@@ -102,7 +102,7 @@ const Categories = () => {
 
         {filteredProducts.length === 0 ? (
           <div className="empty-state">
-            <p style={{ color: '#e2aeaeff', textAlign: 'center', marginTop: '2rem' }}>
+            <p style={{ color: '#550000', textAlign: 'center', marginTop: '2rem' , padding:'1rem', fontSize:'1.2rem'}}>
               No products found for selected filters.
             </p>
           </div>

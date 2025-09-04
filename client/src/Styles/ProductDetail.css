@@ -3,7 +3,7 @@
   margin: 2rem auto;
   padding: 0 1.5rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #7a4a4a;
+  color: #3a1f1f; /* readable dark maroonish text */
 }
 
 .product-main {
@@ -21,7 +21,7 @@
 .product-main-image {
   width: 100%;
   border-radius: 16px;
-  box-shadow: 0 6px 22px rgba(219, 161, 161, 0.3);
+  box-shadow: 0 6px 22px rgba(85, 0, 0, 0.25);
   object-fit: cover;
 }
 
@@ -32,7 +32,7 @@
 
 .product-name {
   font-size: 2.4rem;
-  color: #dba1a1;
+  color: #550000;
   margin-bottom: 1.2rem;
 }
 
@@ -47,7 +47,7 @@
 .product-price {
   font-weight: 700;
   font-size: 1.6rem;
-  color: #a86565;
+  color: #550000;
 }
 
 .product-rating {
@@ -58,16 +58,16 @@
 }
 
 .product-rating svg {
-  color: #dba1a1;
+  color: #550000;
 }
 
 .rating-value {
   font-weight: 600;
-  color: #dba1a1;
+  color: #550000;
 }
 
 .product-quantity {
-  color: #945454;
+  color: #550000;
   font-weight: 600;
   font-size: 1rem;
 }
@@ -76,7 +76,7 @@
   margin-bottom: 1rem;
   line-height: 1.5;
   font-size: 1.1rem;
-  color: #7a4a4a;
+  color: #3a1f1f;
 }
 
 /* Feedback Section */
@@ -87,15 +87,15 @@
 .feedback-section h2 {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #dba1a1;
+  color: #550000;
   margin-bottom: 1.2rem;
 }
 
 .feedback-item {
-  background-color: #fff2f2;
+  background-color: #F9E4BC;
   padding: 1rem 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(219, 161, 161, 0.2);
+  box-shadow: 0 4px 16px rgba(85, 0, 0, 0.2);
   margin-bottom: 1rem;
 }
 
@@ -108,24 +108,24 @@
 
 .feedback-user {
   font-weight: 700;
-  color: #a86565;
+  color: #550000;
 }
 
 .feedback-rating svg {
-  color: #dba1a1;
+  color: #550000;
   margin-right: 2px;
 }
 
 .feedback-comment {
   font-style: italic;
-  color: #7a4a4a;
+  color: #3a1f1f;
 }
 
 /* Related Products Section */
 .related-products-section h2 {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #dba1a1;
+  color: #550000;
   margin-bottom: 1.2rem;
 }
 
@@ -136,13 +136,13 @@
 }
 
 .related-product-card {
-  background-color: #fff2f2;
+  background-color: #F9E4BC;
   border-radius: 12px;
   padding: 0.8rem;
-  box-shadow: 0 4px 16px rgba(219, 161, 161, 0.2);
+  box-shadow: 0 4px 16px rgba(85, 0, 0, 0.2);
   text-align: center;
   text-decoration: none;
-  color: #a86565;
+  color: #3a1f1f;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -152,7 +152,7 @@
 
 .related-product-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 28px rgba(219, 161, 161, 0.4);
+  box-shadow: 0 8px 28px rgba(85, 0, 0, 0.4);
 }
 
 .related-product-card img {
@@ -166,6 +166,7 @@
   font-weight: 700;
   font-size: 1.1rem;
   margin: 0;
+  color: #550000;
 }
 
 .product-action-buttons {
@@ -181,9 +182,9 @@
   align-items: center;
   gap: 0.5rem;
   justify-content: center;
-  background-color: #f7e8e8;
-  color: #a86565;
-  border: 2px solid #dba1a1;
+  background-color: #F9E4BC;
+  color: #550000;
+  border: 2px solid #550000;
   border-radius: 30px;
   padding: 0.6rem 1.2rem;
   font-size: 1rem;
@@ -193,20 +194,20 @@
 }
 
 .wishlist-btn.wishlisted {
-  background-color: #dba1a1;
+  background-color: #550000;
   color: white;
-  border-color: #a86565;
+  border-color: #F9E4BC;
 }
 
 .wishlist-btn:hover {
-  background-color: #dba1a1;
+  background-color: #550000;
   color: white;
-  border-color: #a86565;
+  border-color: #F9E4BC;
 }
 
 .add-to-cart-btn {
   flex: 1;
-  background-color: #dba1a1;
+  background-color: #550000;
   color: white;
   border: none;
   border-radius: 30px;
@@ -218,7 +219,7 @@
 }
 
 .add-to-cart-btn:hover {
-  background-color: #a86565;
+  background-color: #3a1f1f;
 }
 
 /* Responsive */
@@ -232,6 +233,7 @@
     max-width: 100%;
   }
 }
+
 @media (max-width: 480px) {
   .product-name {
     font-size: 1.8rem;

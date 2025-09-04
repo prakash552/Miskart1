@@ -1,63 +1,86 @@
 .about-container {
-  max-width: 1200px;
-  margin: 3rem auto;
-  padding: 0 1.5rem;
-  color: #6b4b00; /* Text color को थोड़ा soften करने के लिए retain किया */
+  max-width: 100%;
+  
+  padding: 2rem 2rem;
+  background-color: #F9E4BC; /* Creamy luxury background */
+  color: #550000; /* Primary text color */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- background-color: rgb(239, 239, 234); /* हल्का background जिससे कंटेंट readable और अलग दिखे */
-  border-radius: 12px;
-  box-shadow: 0 4px 18px rgba(219, 161, 161, 0.3); /* subtle shadow with #dba1a1 tint */
-  transition: box-shadow 0.3s ease;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(85, 0, 0, 0.25); /* Subtle dark-red shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
 }
 
-.about-container:hover {
-  box-shadow: 0 8px 30px rgba(219, 161, 161, 0.5);
-}
 
+/* Title */
 .about-title {
-  font-size: 3rem;
+  font-size: 3.3rem;
   font-weight: 700;
-  color: #dba1a1; /* main theme color */
-  margin-bottom: 1.8rem;
-  text-shadow: 1px 1px 2px rgba(219, 161, 161, 0.7);
+  color: #550000;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(85, 0, 0, 0.35);
+  border-bottom: 3px solid #550000;
+  display: inline-block;
+  padding-bottom: 0.4rem;
 }
 
+/* Subtitle */
 .about-subtitle {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   font-weight: 700;
-  color: #dba1a1;
-  margin-bottom: 1.2rem;
-  border-left: 6px solid #dba1a1;
-  padding-left: 12px;
+  color: #550000;
+  margin: 1.8rem 0 1.2rem;
+  border-left: 6px solid #550000;
+  padding-left: 14px;
   letter-spacing: 0.04em;
+  text-shadow: 1px 1px 4px rgba(85, 0, 0, 0.25);
 }
 
+/* Paragraphs */
 .about-paragraph {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin-bottom: 1.8rem;
-  color: #5a3c3c; /* darkened version for easy reading */
+  font-size: 1.15rem;
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+  color: #3b1e1e; /* Slightly darker for readability */
   text-align: justify;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.015em;
 }
 
+/* List */
 .about-list {
   font-size: 1.15rem;
   line-height: 1.8;
   margin-bottom: 1.8rem;
-  padding-left: 1.5rem;
-  color: #6e4949;
+  padding-left: 1.8rem;
+  color: #550000;
   list-style-type: square;
-  letter-spacing: 0.015em;
 }
 
 .about-list li {
   margin-bottom: 0.8rem;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .about-list li:hover {
-  color: #dba1a1;
-  cursor: default;
+  color: #550000;
+  transform: translateX(4px);
   font-weight: 600;
+  cursor: default;
+}
+
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1.5rem 1.5rem;
+  }
+  .about-title {
+    font-size: 2.4rem;
+  }
+  .about-subtitle {
+    font-size: 1.6rem;
+  }
+  .about-paragraph,
+  .about-list {
+    font-size: 1rem;
+  }
 }

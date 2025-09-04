@@ -1,10 +1,11 @@
 .footer-container {
-  background-color: #fff2f2; /* हल्का गुलाबी बैकग्राउंड */
-  color: #7a4a4a; /* softened dark tone */
-  padding: 3rem 2rem 1.5rem 2rem;
+  background-color: #F9E4BC; /* हल्का warm background */
+  color: #550000; /* गहरा टेक्स्ट */
+  padding: 1rem 2rem 0rem 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  box-shadow: inset 0 4px 8px rgba(219, 161, 161, 0.1);
-  border-radius: 10px;
+  box-shadow: inset 0 4px 8px rgba(85, 0, 0, 0.3);
+  border-radius: 5px;
+ 
 }
 
 .footer-content {
@@ -23,7 +24,7 @@
 
 .footer-section h3 {
   font-weight: 700;
-  color: #dba1a1;
+  color: #550000;
   margin-bottom: 1rem;
   user-select: none;
 }
@@ -33,7 +34,7 @@
 .footer-section li,
 .footer-section a {
   font-weight: 500;
-  color: #7a4a4a;
+  color: #550000;
 }
 
 .footer-section ul {
@@ -48,7 +49,7 @@
 }
 
 .footer-section li:hover {
-  color: #dba1a1;
+  color: #a52a2a;
 }
 
 .footer-section a {
@@ -58,7 +59,7 @@
 }
 
 .footer-section a:hover {
-  color: #dba1a1;
+  color: #a52a2a;
 }
 
 /* Social Icons */
@@ -69,14 +70,14 @@
 }
   
 .social-icons a {
-  color: #c58e8e;
+  color: #7a4a4a;
   font-size: 1.4rem;
   transition: color 0.3s ease;
 }
 
 .social-icons a:hover,
 .social-icons a:focus {
-  color: #dba1a1;
+  color: #550000;
   outline: none;
 }
 
@@ -90,24 +91,24 @@
 .subscribe-form input[type="email"] {
   padding: 0.6rem 1rem;
   border-radius: 30px;
-  border: 1.8px solid #dba1a1;
+  border: 1.8px solid #550000;
   flex: 1;
   font-weight: 600;
-  color: #9a6f6f;
-  background-color: #fff5f5;
+  color: #550000;
+  background-color: #fff;
   transition: border-color 0.3s ease;
 }
 
 .subscribe-form input[type="email"]:focus {
   outline: none;
-  border-color: #a06565;
+  border-color: #a52a2a;
 }
 
 .subscribe-form button {
   padding: 0.6rem 1.6rem;
   border-radius: 30px;
   border: none;
-  background-color: #dba1a1;
+  background-color: #550000;
   color: white;
   font-weight: 700;
   cursor: pointer;
@@ -115,24 +116,24 @@
 }
 
 .subscribe-form button:hover {
-  background-color: #a06565;
+  background-color: #7a1c1c;
 }
 
 .subscription-message {
-  margin-top: 0.4rem;
+  margin-top: 0.1rem;
   font-weight: 600;
-  color: #dba1a1;
+  color: #550000;
   user-select: none;
 }
 
 /* Footer bottom copyright */
 .footer-bottom {
   text-align: center;
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(219, 161, 161, 0.4);
+  margin-top: 0.3rem;
+  padding-top: 1;
+  border-top: 1px solid rgba(85, 0, 0, 0.3);
   font-weight: 600;
-  color: #9a6f6f;
+  color: #7a4a4a;
   font-size: 0.9rem;
   user-select: none;
 }
@@ -141,27 +142,40 @@
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
-   gap: 0px;
+    gap: 10px;
+    align-items: center;
   }
 
   .footer-section {
     min-width: 100%;
-    
   }
 
   .subscribe-form {
     flex-direction: row;
-     gap: 0rem;
-  margin-top: 0rem;
+    gap: 0rem;
+    margin-bottom: -30px;
   }
 
   .subscribe-form button {
     width: 30%;
-    margin-bottom: 0px ;
+    margin-bottom: 0px;
   }
 
-  .footer-container{
-       padding: 1rem 2rem 1rem 2rem;
+  .footer-container {
+    padding: 1rem 2rem 0rem 2rem;
+    border-radius: 0px;
+    box-shadow: none;
+    
 
+  }
+
+  .footer-section-contact {
+    padding: 2px;
+    margin-bottom: 20px;
+  }
+
+  .subscription-message {
+    padding: 0px;
+    margin: 0px;
   }
 }

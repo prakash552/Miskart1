@@ -1,13 +1,13 @@
 .category-filter-container {
   display: flex;
   overflow-x: auto;
-  gap: 1rem;
-  padding: 0.7rem 1.3rem;
-  background: #fff8f0; /* Light warm background matching navbar */
+  gap: 2rem;
+  padding: 0.90rem 4.3rem;
+  background: #F9E4BC; /* Soft cream-beige background */
   border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(214, 134, 20, 0.08);
+  box-shadow: 0 4px 14px rgba(85, 0, 0, 0.12); /* deep maroon shadow */
   scrollbar-width: none;
-  margin-top: 34px;
+  margin-top: 14px;
 }
 
 .category-filter-container::-webkit-scrollbar {
@@ -16,34 +16,49 @@
 
 .category-btn {
   flex: 0 0 auto;
-  padding: 0.65rem 1.5rem;
+  padding: 0.85rem 1.5rem;
   border-radius: 22px;
   border: none;
-  background-color: #f7efe2;
-  color: #dba1a1;
+  background-color: #fff; /* neutral button background */
+  color: #550000; /* deep maroon text */
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
-  box-shadow: 0 2px 8px rgba(214, 134, 20, 0.15);
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(85, 0, 0, 0.15);
   margin-bottom: 4px;
 }
 
 .category-btn:hover {
-  background-color: #dba1a1;
+  background-color: #550000;
   color: #fff;
-  box-shadow: 0 8px 28px rgba(214, 134, 20, 0.22);
+  box-shadow: 0 8px 28px rgba(85, 0, 0, 0.25);
+  transform: translateY(-2px);
 }
 
 .category-btn.active {
-  background-color: #dba1a1; /* Golden highlight for active */
+  background-color: #550000; /* Active = deep maroon */
   color: #fff;
-  box-shadow: 0 0 0 2.5px #dba1a1, 0 8px 28px rgba(214, 134, 20, 0.3);
+  box-shadow: 0 0 0 2.5px #F9E4BC, 0 8px 28px rgba(85, 0, 0, 0.35);
   font-weight: 700;
+  transform: scale(1.08);
 }
 
 /* Accessibility: focus */
 .category-btn:focus-visible {
-  outline: 3px solid #dba1a1;
+  outline: 3px solid #550000;
   outline-offset: 2px;
+}
+
+@media (max-width: 760px) {
+  .category-filter-container {
+    padding: 0.75rem 1rem;
+    gap: 1rem;
+    margin-top: 40px;
+  }
+  .category-btn {
+    padding: 0.65rem 1rem;
+    font-size: 0.9rem;
+  }
+    
 }

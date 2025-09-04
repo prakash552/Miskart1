@@ -1,104 +1,134 @@
 .cart-main-area {
-  max-width: 99%;
-  margin: 32px auto;
- background-color: rgb(239, 239, 234);
+  max-width:100%;
+  margin: 0 auto;
+  background-color: #f4ecdd; /* Cream background */
   border-radius: 16px;
- 
-  padding: 1.5rem;
+  padding: 2.5rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  min-height:100vh;
+  min-height: 100vh;
+  
 }
+
+/* Layout */
 .cart-flex-layout {
   display: flex;
-  gap: 2.5rem;
+  gap: 3.5rem;
   justify-content: space-between;
 }
 .cart-products-area { flex: 2 }
 .cart-items {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 10px;
+  
 }
+
+/* Each cart item */
 .cart-item {
   display: flex;
   align-items: center;
   margin-bottom: 1.25rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e5d2b0;
   padding-bottom: 1rem;
-  background: #faf7f2;
+  background: #fff8f0;
   border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-left:1rem;
+  padding-right:1rem;
 }
+.cart-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(85, 0, 0, 0.6);
+}
+
 .cart-item-image {
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 100px;
   object-fit: cover;
-  border-radius: 10px;
-  margin-right: 1rem;
+  border-radius: 5px;
+  margin-right: 2rem;
 }
-.cart-item-details h3 { margin: 0 0 0.3rem 0; color: #333 }
-.cart-item-details p { margin: 0.2rem 0 }
+
+.cart-item-details h3 {
+  margin: 0 0 0.3rem 0;
+  color: #550000;
+ font-size: 1.5rem;
+  font-weight: 700;
+}
+.cart-item-details p {
+  margin: 0.5rem 0;
+  color: #3b1e1e;
+  font-weight: 400;
+}
+
+/* Remove button */
 .remove-btn {
   margin-left: auto;
-  background: #dba1a1;
+  background: #550000;
   border: none;
-  color: white;
+  color: #F9E4BC;
   padding: 0.4rem 0.85rem;
   border-radius: 6px;
   cursor: pointer;
   font-weight: 600;
-  transition: background 0.3s;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
-
-.cart-item-image,
-.cart-item-details {
-  cursor: pointer;
+.remove-btn:hover {
+  background: #7a1a1a;
+  transform: scale(1.05);
 }
-
-.remove-btn:hover { background: #dba1a1; }
 
 /* Billing area */
-.cart-billing-area { flex: 1 }
+.cart-billing-area { flex: 1;}
 .modern-box {
-  background: #fff8f0;
-  padding: 1.1rem 1.3rem;
+  background: #fff;
+  padding: 2.1rem 1.3rem;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(214,134,20,0.12);
-  margin-top: 1.5rem;
+  box-shadow: 0 3px 10px rgba(85, 0, 0, 0.5);
+  margin-top: 1rem;
 }
-.cart-summary h3 { margin-bottom: 0.7rem; color: #dba1a1 }
+.cart-summary h3 {
+  margin-bottom: 0.7rem;
+  color: #550000;
+  font-weight: 700;
+}
 .summary-row {
   display: flex;
   justify-content: space-between;
   padding: 0.45rem 0;
   font-size: 1rem;
-  color: #444;
+  color: #333;
 }
 .summary-row.grand {
   font-weight: 700;
-  color: #dba1a1;
+  color: #550000;
   border-top: 2px solid #eee;
   margin-top: 0.6rem;
   padding-top: 0.6rem;
   font-size: 1.15rem;
 }
 
+/* Checkout buttons */
 .checkout-btn, .pay-btn, .cancel-btn {
   width: 100%;
   margin-top: 0.75rem;
-  background: #dba1a1;
-  color: white;
+  background: #550000;
+  color: #F9E4BC;
   padding: 0.7rem 0;
   font-size: 1rem;
   border: none;
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.2s;
 }
-.checkout-btn:hover, .pay-btn:hover, .cancel-btn:hover { background: #dfd1ba; }
+.checkout-btn:hover, .pay-btn:hover, .cancel-btn:hover {
+  background: #7a1a1a;
+  transform: translateY(-2px);
+}
 
+/* Payment section */
 .payment-section { margin-top: 0.8rem }
-.payment-section h4 { margin-bottom: 0.7rem }
+.payment-section h4 { margin-bottom: 0.7rem; color: #550000 }
 .payment-option {
   margin: 0.5rem 0;
   display: flex;
@@ -108,8 +138,10 @@
 .online-payment-info {
   font-size: 0.97rem;
   margin-bottom: 0.6rem;
-  color: #808080;
+  color: #777;
 }
+
+/* Quantity Box */
 .quantity-box {
   display: flex;
   align-items: center;
@@ -117,17 +149,21 @@
   margin-top: 0.4rem;
 }
 .quantity-box button {
-  background: #f2e7da;
+  background: #F9E4BC;
   border: none;
-  color: #dba1a1;
+  color: #550000;
   font-size: 1.05rem;
   font-weight: 600;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(214,134,20,0.06);
-  transition: background 0.25s;
+  box-shadow: 0 2px 4px rgba(85, 0, 0, 0.15);
+  transition: background 0.25s, transform 0.2s;
+}
+.quantity-box button:hover {
+  background: #e8d2a8;
+  transform: scale(1.1);
 }
 .quantity-box button:disabled {
   opacity: 0.5;
@@ -138,10 +174,11 @@
   color: #333;
   padding: 2px 7px;
   border-radius: 6px;
-  background: #fff8f0;
+  background: #fff;
   border: 1px solid #dfd1ba;
 }
 
+/* Coupon Row */
 .coupon-row {
   display: flex;
   justify-content: space-between;
@@ -156,20 +193,34 @@
   font-size: 1rem;
 }
 .apply-coupon-btn {
-  background: #dba1a1;
-  color: white;
+  background: #550000;
+  color: #F9E4BC;
   border: none;
   padding: 0.35rem 1.1rem;
   border-radius: 7px;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.25s;
+  transition: background 0.25s, transform 0.2s;
 }
-.apply-coupon-btn:hover { background: #dfd1ba }
-
+.apply-coupon-btn:hover {
+  background: #7a1a1a;
+  transform: scale(1.05);
+}
 
 /* Responsive */
 @media (max-width: 900px) {
   .cart-flex-layout { flex-direction: column }
   .cart-billing-area { margin-top: 2rem }
+  .cart-main-area { padding: 1.5rem 1rem;  border-radius: 12px; }
+  .cart-item-image { width: 120px; height: 80px; margin-right: 1.5rem;
+  border-radius: 6px;  }
+  .cart-item-details h3 { font-size: 1.3rem; }
+  .cart-item-details p { font-size: 0.95rem; }
+  .remove-btn { padding: 0.35rem 0.75rem; font-size: 0.9rem; }
+  .summary-row { font-size: 0.95rem; }
+  .summary-row.grand { font-size: 1.05rem; }
+  .checkout-btn, .pay-btn, .cancel-btn { font-size: 0.95rem; padding: 0.6rem 0; }
+  .quantity-box button { width: 28px; height: 28px; font-size: 1rem;  }
+  .quantity-box span { font-size: 1rem; padding: 2px 6px; }
+  .coupon-input { font-size: 0.95rem; } 
 }

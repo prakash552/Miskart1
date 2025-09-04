@@ -1,13 +1,19 @@
 .banner {
   position: relative;
   overflow: hidden;
-  width: 98vw;    /* full viewport width */
+  width: 98vw;    
   height: 85vh;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(85, 0, 0, 0.25); /* Dark red subtle shadow */
   margin: 20px auto;
-  background: white;
+  background: #F9E4BC; /* Theme background */
   cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.banner:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 28px rgba(85, 0, 0, 0.45);
 }
 
 .banner-slider {
@@ -18,53 +24,57 @@
 }
 
 .banner-image {
-  width: 100vw;       /* each image full viewport width */
-  height:100%;
+  width: 100vw;       
+  height: 100%;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 16px;
   user-select: none;
   pointer-events: none;
   background-repeat: no-repeat;
 }
 
-
+/* Dots container */
 .banner-dots {
   position: absolute;
-  bottom: 15px;
+  bottom: 18px;
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 12px;
 }
 
+/* Inactive dots */
 .dot {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #ddd;
-  box-shadow: 0 0 5px #ccc;
+  background: #F9E4BC;
+  box-shadow: 0 0 6px rgba(85, 0, 0, 0.3);
   cursor: pointer;
-  transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease, transform 0.3s ease;
 }
 
+/* Active dot */
 .dot.active {
-  background-color: #dba1a1;
-  box-shadow: 0 0 10px #dba1a1;
-}
-.dot:hover {
-  background-color: #e0b9b9;
+  background-color: #550000; /* Primary theme color */
+  box-shadow: 0 0 10px rgba(85, 0, 0, 0.6);
+  transform: scale(1.2);
 }
 
-@media (max-width:768px){
-  .banner {
-  position: relative;
-  overflow: hidden;
-  width: 97vw;    /* full viewport width */
-  height: 35vh;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.5);
-  margin: 10px auto;
-  background: transparent;
-  cursor: pointer;
+/* Hover effect */
+.dot:hover {
+  background-color: #550000;
+  transform: scale(1.15);
 }
+
+/* Responsive */
+@media (max-width:768px) {
+  .banner {
+    width: 97vw;    
+    height: 35vh;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(85, 0, 0, 0.35);
+    margin: 10px auto;
+    background: transparent;
+  }
 }

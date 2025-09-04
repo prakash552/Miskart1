@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
-import "../Styles/SearchWithAutoComplete.css";
+
 
 const SearchBarWithAutoComplete = ({ products }) => {
   const [searchTerm, setSearchTerm] = useState("");
